@@ -23,11 +23,11 @@ app.post("/arduino", async (req, res) => {
   const message = req.body.message || "Arduinoからの通知";
 
   // ここに送りたい userId を入れる（後で自動化もできる）
-  const userId = "ここに送りたい userId";
+  const userId = "userId";
 
   await axios.post(
     "https://api.line.me/v2/bot/message/push",
-    {
+    {U24804b21f44ae53a069631950b8f7661
       to: userId,
       messages: [{ type: "text", text: message }]
     },
